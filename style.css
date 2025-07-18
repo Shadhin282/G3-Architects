@@ -40,6 +40,9 @@ main{
 main > section{
     margin-top: 130px;
 }
+.text-primary{
+    color:#ff900e;
+}
 /* navbar style */
 .navbar{
     justify-content: space-between;
@@ -99,7 +102,23 @@ main > section{
 }
 /* Responsive Media Query */
 @media screen and (max-width: 576px){
-    .navbar, .nav_links {
+    .navbar, .nav_links, .teams {
         flex-direction : column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .our-features{
+        width: 100%;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (576px<=width<=992px){
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 50px auto;
     }
 }
