@@ -220,13 +220,14 @@ footer{
         margin: 50px auto;
     }
     #experience-badge{
-        margin-top:30px;
+        margin:30px auto;
+        
         
     }
 }
 
 @media screen and (576px<=width<=992px){
-    .teams{
+    .teams, .features{
         flex-direction: column;
     }
     .our-features{
